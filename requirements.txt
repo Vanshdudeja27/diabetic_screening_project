@@ -1,0 +1,19 @@
+numpy
+tensorflow
+joblib
+Pillow
+tensorflow
+streamlit
+requests
+typing-extensions
+dataclasses; python_version < "3.7"
+six
+tornado
+tzdata
+urllib3
+tenacity
+referencing
+smmap
+ipds-py
+watchdog
+
