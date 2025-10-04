@@ -7,9 +7,12 @@ import io
 import base64
 
 # Load models & scaler once
-mlp = joblib.load(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models\pima_mlp_model.pkl")
-scaler = joblib.load(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models\pima_scaler.pkl")
-cnn_model = load_model(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models\efficientnetb3_aptos.h5")
+project_root = os.path.dirname(os.path.abspath(__file__))
+
+mlp = joblib.load(os.path.join(project_root, "notebooks", "models", "pima_mlp_model.pkl"))
+scaler = joblib.load(os.path.join(project_root, "notebooks", "models", "pima_scaler.pkl"))
+cnn_model = load_model(os.path.join(project_root, "notebooks", "models", "efficientnetb3_aptos.h5"))
+
 
 clinical_cols = ['Pregnancies','Glucose','BloodPressure','SkinThickness',
                 'Insulin','BMI','DiabetesPedigreeFunction','Age']
