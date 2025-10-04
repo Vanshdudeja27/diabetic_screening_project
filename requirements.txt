@@ -2,7 +2,6 @@ numpy
 tensorflow
 joblib
 Pillow
-tensorflow
 streamlit
 requests
 typing-extensions
@@ -12,8 +11,4 @@ tornado
 tzdata
 urllib3
 tenacity
-referencing
-smmap
 watchdog
-
-
