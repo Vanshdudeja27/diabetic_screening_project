@@ -16,4 +16,23 @@ Clear output formatting with risk scores and stage classification
 Support code and Jupyter notebooks for training and experimentation
 
 This project demonstrates the practical application of deep learning and clinical data analysis in healthcare technology to aid early diabetes and DR diagnosis.
+# 🚀 Diabetic Screening Web App
+
+Try the live demo :
+
+[Click to Open the App](https://diabeticscreeningproject-27.streamlit.app/)
+
+> Powered by [Streamlit Cloud](https://streamlit.io/cloud)
+
+## 🧠 How It Works
+
+- Upload clinical data and/or retinal images
+- Predicts diabetes risk from clinical features (e.g., glucose, pregnancies)
+- Classifies diabetic retinopathy stage from retinal images using deep learning
+- Displays results and risk scores interactively
+
+## 🛠 Requirements
+
+Install dependencies:
+
 
