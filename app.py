@@ -9,9 +9,9 @@ from PIL import Image
 app = Flask(__name__)
 
 # Load models and scaler once on startup
-mlp = joblib.load(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models/pima_mlp_model.pkl")
-scaler = joblib.load(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models/pima_scaler.pkl")
-cnn_model =  load_model(r"C:\Users\vansh\OneDrive\Documents\diabetic_screening_project\notebooks\models/efficientnetb3_aptos.h5")   # correct path
+mlp = joblib.load(os.path.join(project_root, "notebooks", "models", "pima_mlp_model.pkl"))
+scaler = joblib.load(os.path.join(project_root, "notebooks", "models", "pima_scaler.pkl"))
+cnn_model = load_model(os.path.join(project_root, "notebooks", "models", "efficientnetb3_aptos.h5"))   # correct path
 
 clinical_cols = ['Pregnancies','Glucose','BloodPressure','SkinThickness',
                  'Insulin','BMI','DiabetesPedigreeFunction','Age']
