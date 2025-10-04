@@ -1,4 +1,5 @@
 numpy
+tensorflow
 joblib
 Pillow
 tensorflow
@@ -15,3 +16,4 @@ referencing
 smmap
 ipds-py
 watchdog
+
