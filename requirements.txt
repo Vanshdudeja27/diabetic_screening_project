@@ -12,3 +12,5 @@ tzdata
 urllib3
 tenacity
 watchdog
+sklearn
+
